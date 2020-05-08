@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
-import TodoList from './components/TodoList';
+
+import Header from './components/Layouts/Header';
+// import TodoList from './components/TodoList';
+import Login from './components/Auth/LoginForm';
 
 function App() {
   const state = {
@@ -13,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
-        <TodoList todos={state.todos} />
+        <Header />
+        <Login />
+        {/* <TodoList todos={state.todos} /> */}
     </div>
   );
 }
